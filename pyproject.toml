@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "technova-attrition"
+version = "0.1.0"
+description = "Analyse des causes d’attrition pour TechNova Partners"
+authors = ["Ton Nom <ton.email@example.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pandas = "^1.5"
+numpy = "^1.24"
+matplotlib = "^3.6"
+scikit-learn = "^1.2"
+shap = "^0.41"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.3"
+flake8 = "^6.0"
+isort = "^5.12"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
